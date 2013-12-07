@@ -75,8 +75,6 @@
 
 		this.jcd.getStations(function(data){
 			$.each(data, function(id, station){
-				console.log(station);
-
 				var d = new Date(station.last_update);
 				var infos = '<ul>'+
 					'<li>Adresse : '+ station.address +'</li>'+
